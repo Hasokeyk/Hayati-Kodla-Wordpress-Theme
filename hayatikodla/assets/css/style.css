@@ -316,7 +316,7 @@ a:hover {text-decoration: none;}
     text-align: center;
 }.kategori-listesi .kategoriler .kategori{
     /* float: left; */
-    width: calc(20% - 20px);
+    width: calc(20% - 24px);
     margin: 10px;
     display: inline-block;
 }.kategori-listesi .kategoriler .kategori .kategori-gorsel{

@@ -27,18 +27,18 @@
                 }else{
             ?>
             <div class="yazi-gorsel">
-                <img data-piio="/wp-content/uploads/2018/06/hayati-kodla-default.jpg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" alt="<?=get_the_title()?>" />
+                <img src="/wp-content/uploads/2018/06/hayati-kodla-default.jpg" alt="<?php echo get_the_title()?>" />
             </div>
             <?php
                 }
             ?>
             
             <div class="page-title">
-                <h1><?=get_the_title();?></h1>
+                <h1><?php echo get_the_title();?></h1>
             </div>
             
             <div class="sayfa-icerik">
-                <?=the_content();?>
+                <?php echo the_content();?>
             </div>
             <?php
                 endwhile; // End of the loop.

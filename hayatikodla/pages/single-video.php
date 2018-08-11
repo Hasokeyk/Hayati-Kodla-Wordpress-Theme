@@ -13,7 +13,7 @@
 				the_post();
         ?>
         <div class="page-title">
-            <h1 class="baslik"><?=get_the_title();?></h1>
+            <h1 class="baslik"><?php echo get_the_title();?></h1>
         </div>
         
         <div class="sayfa-icerik">
@@ -27,8 +27,8 @@
                         foreach($videolar as $v){
                 ?>
                 <div class="video">
-                    <a href="<?=$v['video_linki']?>" title="<?=$v['video_basligi']?>">
-                        <img src="<?=$v['video_gorsel']['url']?>" alt="<?=$v['video_basligi']?>" />
+                    <a href="<?php echo $v['video_linki']?>" title="<?php echo $v['video_basligi']?>">
+                        <img src="<?php echo $v['video_gorsel']['url']?>" alt="<?php echo $v['video_basligi']?>" />
                     </a>
                 </div>
                 <?php 

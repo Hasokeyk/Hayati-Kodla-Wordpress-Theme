@@ -15,17 +15,17 @@
                 ?>
                 <div class="col-lg-12">
                     <div class="profil-resmi">
-                        <img src="<?=$hakkimda['profil_resmi']['url']?>" alt="<?=$hakkimda['ad_soyad'];?>" />
+                        <img src="<?php echo $hakkimda['profil_resmi']['url']?>" alt="<?php echo $hakkimda['ad_soyad'];?>" />
                     </div>
                     <h1 class="adsoyad">
-                        <?=$hakkimda['ad_soyad'];?>
+                        <?php echo $hakkimda['ad_soyad'];?>
                     </h1>
                     <div class="unvan">
-                        <?=$hakkimda['unvan'];?>
+                        <?php echo $hakkimda['unvan'];?>
                     </div>
                 </div>
                 <div class="col-lg-12 hakkimda-aciklama">
-                    <?=$hakkimda['hakkimda_yazisi'];?>
+                    <?php echo $hakkimda['hakkimda_yazisi'];?>
                 </div>
             </div>
             
@@ -37,9 +37,9 @@
                 ?>
                 <div class="bildiklerim-grup">
                     
-                    <h<?=$i<4?'2':'3'?> class="grup-adi">
-                        <?=$b['grup_basligi']?>
-                    </h<?=$i<4?'2':'3'?>>
+                    <h<?php echo $i<4?'2':'3'?> class="grup-adi">
+                        <?php echo $b['grup_basligi']?>
+                    </h<?php echo $i<4?'2':'3'?>>
                     <div class="grup-maddeleri">
                         <div class="row">
                             <?php 
@@ -52,12 +52,12 @@
                                     }
                                 ?>
                                 <div class="madde-gorsel">
-                                    <img src="<?=$g['gorsel']['url']?>" alt="<?=$hakkimda['ad_soyad'];?> - <?=$g['madde']?> için <?=$g['tecrube']?> yıllık tecrübeye sahip" />
+                                    <img src="<?php echo $g['gorsel']['url']?>" alt="<?php echo $hakkimda['ad_soyad'];?> - <?php echo $g['madde']?> için <?php echo $g['tecrube']?> yıllık tecrübeye sahip" />
                                     <?php 
                                         if(!empty($g['tecrube'])){
                                     ?>
                                     <div class="madde-tecrube" data-text="Yıl Tecrübe">
-                                        <?=$g['tecrube']?>
+                                        <?php echo $g['tecrube']?>
                                     </div>
                                     <?php
                                         }else if($g['link']){
@@ -70,7 +70,7 @@
                                     ?>
                                 </div>
                                 <div class="madde-baslik">
-                                    <?=$g['madde']?>
+                                    <?php echo $g['madde']?>
                                 </div>
                                 <?php
                                     if(!empty($g['link'])){

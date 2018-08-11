@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-10 text-center">
-                <h1 class="page-title"><?=get_the_title();?> [BETA]</h1>
+                <h1 class="page-title"><?php echo get_the_title();?> [BETA]</h1>
                 <p>
                     Sizlerin mutluluğunu düşünerek hazırladığımız bu projemizde whatsapp'tan her sabah sizlere mutlu bir "Günaydın" yazan tatlış bir yapay zeka botu hazırladık
                 </p>

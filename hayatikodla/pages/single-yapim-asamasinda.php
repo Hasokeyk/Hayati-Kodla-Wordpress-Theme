@@ -13,7 +13,7 @@
 				the_post();
         ?>
         <div class="page-title">
-            <h1 class="baslik"><?=get_the_title();?></h1>
+            <h1 class="baslik"><?php echo get_the_title();?></h1>
         </div>
         
         <div class="sayfa-icerik">
