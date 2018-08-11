@@ -39,7 +39,7 @@
                 <?=get_the_title($m->ID)?>
             </div>
             <div class="manset-tarih">
-                <?=get_the_date();?>
+                <?=get_the_date('j F Y',$m->ID);?>
             </div>
             
         </div>
