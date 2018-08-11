@@ -8,8 +8,8 @@
         <div class="row">
             
             <div class="col-lg-5">
-                <h1 class="baslik"><?=single_cat_title()?></h1>
-                <div class="alt-baslik"><?=category_description()?></div>
+                <h1 class="baslik"><?php echo single_cat_title()?></h1>
+                <div class="alt-baslik"><?php echo category_description()?></div>
             </div>
             <div class="col-lg-7">
                 
@@ -22,7 +22,7 @@
                     ?>
                     <!--YAZİ-->
                     <div class="yazi">
-                        <a href="<?=get_permalink();?>">
+                        <a href="<?php echo get_permalink();?>">
                             <?php 
                                 if ( has_post_thumbnail(get_the_ID())){
                             ?>
@@ -35,7 +35,7 @@
                                 }else{
                             ?>
                             <div class="yazi-gorsel">
-                                <img src="/wp-content/uploads/2018/06/hayati-kodla-default.jpg" alt="<?=get_the_title()?>" />
+                                <img src="/wp-content/uploads/2018/06/hayati-kodla-default.jpg" alt="<?php echo get_the_title()?>" />
                             </div>
                             <?php
                                 }
@@ -45,7 +45,7 @@
                                <?php the_title(); ?>
                             </div>
                             <div class="yazi-kisa-aciklama">
-                                <?=wp_trim_words(get_the_content(get_the_ID()),10); ?>
+                                <?php echo wp_trim_words(get_the_content(get_the_ID()),10); ?>
                             </div>
                         </a>
                     </div>

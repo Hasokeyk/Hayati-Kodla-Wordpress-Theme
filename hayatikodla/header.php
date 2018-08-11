@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 
 	<!--SEO-->
-	<title><?=wp_title();?></title>
+	<title><?php echo wp_title();?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <?=wp_head();?>
+    <?php echo wp_head();?>
     
 </head>
-<body <?=body_class();?>>
+<body <?php echo body_class();?>>
 
     <!-- HEADER -->
 	<header class="ust-kisim">
 		<div class="container">
 			<div class="row">
 				<div class="logo">
-					<a href="/" title="<?=bloginfo('blogname');?>">
+					<a href="/" title="<?php echo bloginfo('blogname');?>">
 						<img src="https://www.hayatikodla.com/wp-content/uploads/2018/07/hayati-kodla-1.gif" alt="HAYATI KODLA" />
 					</a>
 				</div>

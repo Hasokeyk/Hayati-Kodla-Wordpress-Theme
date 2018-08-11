@@ -14,7 +14,7 @@
 				the_post();
         ?>
         <div class="page-title">
-            <h1><?=get_the_title();?></h1>
+            <h1><?php echo get_the_title();?></h1>
         </div>
         
         <div class="sayfa-icerik">

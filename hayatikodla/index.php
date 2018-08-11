@@ -21,8 +21,8 @@
         foreach($mansetler as $m){
             $haricTut[] = $m->ID;
     ?>
-    <div class="manset <?=$i==0?'buyuk':''?>">
-        <a href="<?=get_permalink($m->ID);?>">
+    <div class="manset <?php echo $i==0?'buyuk':''?>">
+        <a href="<?php echo get_permalink($m->ID);?>">
         <?php
             if( has_post_thumbnail($m->ID) ) {
                 echo get_the_post_thumbnail($m->ID , 'full' , array('alt' => get_the_title($m->ID) ));
@@ -36,10 +36,10 @@
         <div class="manset-bilgi">
             
             <div class="manset-baslik">
-                <?=get_the_title($m->ID)?>
+                <?php echo get_the_title($m->ID)?>
             </div>
             <div class="manset-tarih">
-                <?=get_the_date('j F Y',$m->ID);?>
+                <?php echo get_the_date('j F Y',$m->ID);?>
             </div>
             
         </div>
@@ -69,22 +69,22 @@
             ?> 
             <!--KATEGORI-->
             <div class="kategori">
-                <a href="<?=get_category_link($c->term_id)?>">
+                <a href="<?php echo get_category_link($c->term_id)?>">
                     <div class="kategori-gorsel">
                         <?php 
                             if(isset($gorsel['url'])){
                         ?>
-                        <img data-piio="<?=$gorsel['url']?>" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" alt="<?=$c->name?>" />
+                        <img data-piio="<?php echo $gorsel['url']?>" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" alt="<?php echo $c->name?>" />
                         <?php
                             }else{
                         ?>
-                        <img data-piio="/wp-content/uploads/2018/06/hayati-kodla-default.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" alt="<?=$c->name?>" />
+                        <img data-piio="/wp-content/uploads/2018/06/hayati-kodla-default.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" alt="<?php echo $c->name?>" />
                         <?php
                             }
                         ?>
                     </div>
                     <div class="kategori-adi">
-                        <h3 class="baslik"><?=$c->name?></h3>
+                        <h3 class="baslik"><?php echo $c->name?></h3>
                     </div>
                 </a>
             </div>
@@ -114,7 +114,7 @@
             ?> 
             <!-- PROJE -->
             <div class="proje">
-                <a href="<?=get_permalink($p->ID)?>">
+                <a href="<?php echo get_permalink($p->ID)?>">
                 <?php 
                     if ( has_post_thumbnail($p->ID)){
                         echo get_the_post_thumbnail( $p->ID, 'thumbnail' ,['alt' => $p->post_title]);
