@@ -9,7 +9,7 @@
                     <p>
                         Girişim ve Yazılım Blogu
                     </p>
-                    <p>Tema V1.0.5</p>
+                    <p>Tema V1.0.5.1</p>
                 </div>
             </div>
             
